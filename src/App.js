@@ -1,14 +1,15 @@
 import React from "react";
-import { Fragment } from 'react/cjs/react.production.min';
 import './App.css';
 import Formulario from './components/Formulario.jsx';
+import { Container, Typography } from '@material-ui/core';
+import 'fontsource-roboto'
 
 function App() {
   return (
-    <Fragment>
-      <h1>Formulário</h1>
+    <Container component="article" maxWidth="sm">
+      <Typography variant="h3" component="h1" align="center">Formulário</Typography>
       <Formulario/>
-    </Fragment>
+    </Container>
   );
 }
 
